@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(49, 77%, 76%);
+}
+
+.container{
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content:center;
+  gap: 10px;
+}
+
+.polaroid{
+  margin: auto;
+  background-color: hsl(180, 100%, 97%);
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.polaroid:hover{
+  background-color: hsla(12, 100%, 52%, 0.445);
+}
+
+img{ 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
